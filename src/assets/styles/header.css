@@ -1,0 +1,22 @@
+
+
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+header{
+    padding: 20px 50px 50px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 120px;
+    
+}
