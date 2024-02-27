@@ -1,5 +1,6 @@
 
 import "./../assets/styles/header.css"
+import logo from '../assets/images/logo.png'
 function Header() {
     
   
@@ -7,7 +8,7 @@ function Header() {
       <>
         <header>
             <div className="logo">
-                <img src="logo.png" alt="logo" />
+                <img src={logo} alt="logo Kasa" />
             </div>
             <ul className="nav">
                 <li>Accueil</li>

@@ -1,16 +1,18 @@
-import Footer from './components/footer'
-import Header from './components/header'
+import Banner from './components/banner'
+import Home from './pages/home.jsx'
 
-//import './App.css'
+
+import './App.css'
 
 function App() {
 
   return (
     <>
      
-      
-      <Header />
-      <Footer />
+      <Banner />
+      <Home />
+     
+     
     </>
   )
 }

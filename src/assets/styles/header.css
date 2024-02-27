@@ -5,13 +5,16 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 260px;
     font-family: "Montserrat", sans-serif;
+    font-size: 25px;
     font-weight: 500;
+    color: rgba(255, 96, 96, 1)
+    ;
 }
 
 header{
-    padding: 20px 50px 50px 55px;
+    padding: 20px 50px 0px 55px;
     display: flex;
     justify-content: space-between;
 }

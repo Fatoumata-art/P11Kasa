@@ -1,5 +1,7 @@
 
 import "./../assets/styles/footer.css"
+import logoFooter from '../assets/images/logoFooter.png'
+
 function Footer() {
     
   
@@ -7,7 +9,7 @@ function Footer() {
       <>
         <footer>
             <div className="logoFooter">
-                <img src="logoFooter.png" alt="logo" />
+                <img src={logoFooter} alt="kasa" />
             </div>
             <p>© 2020 Kasa. All rights reserved</p>
         </footer>

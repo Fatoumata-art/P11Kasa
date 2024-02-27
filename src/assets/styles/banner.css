@@ -1,0 +1,22 @@
+.banner{
+    width: 1420px;
+    padding: 50px;
+    height: 222px;
+}
+
+.banner img{
+   
+    width: 100%;
+}
+
+.banner-title{
+   color: white;
+   font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   
+}
