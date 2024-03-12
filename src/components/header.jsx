@@ -7,7 +7,7 @@ function Header() {
     
     return (
       <>
-        <header>
+        <header className="header">
             <div className="logo">
                 <img src={logo} alt="logo Kasa" />
             </div>

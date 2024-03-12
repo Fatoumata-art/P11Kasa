@@ -1,5 +1,5 @@
-*{
-    margin: 0;
+.about_section{
+    margin: 0; 
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
@@ -9,11 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 52px;
-    background-color: var(--primary-color);
-    color: green;
+    /* height: 52px; */
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
     padding-left: 20px;
     border-radius: 10px;
+   
 }
 
 .dropdown_header:hover{
@@ -35,7 +36,7 @@
 }
 
 .dropdown_content {
-    background-color: var(--tertiary-color);
+    background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     overflow: hidden;
     transition: max-height 0.4s ease;
