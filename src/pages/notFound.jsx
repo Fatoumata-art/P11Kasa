@@ -6,6 +6,7 @@ function NotFoundPage() {
         <div className='error-page'>
             <img src={error404} alt='erreur 404' />
             <p className='text-error'>Oups! La page que vous demandez n'existe pas.</p>
+            {/* <link to="/">Retourner sur la page d’accueil</link> */}
         </div>
     )
 }
