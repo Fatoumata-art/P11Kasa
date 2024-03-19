@@ -7,7 +7,7 @@ function DecriptionAppart() {
                 <div className="appart-desc-right">
                     <h1 className="appart-desc-title">title</h1>
                     <p className="appart-desc-text">location</p>
-                    <div className="">
+                    <div className="tag-container">
                        <span className="tag">tags</span>
                     </div>
                 </div>

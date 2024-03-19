@@ -28,6 +28,10 @@
     gap: 10px;
 }
 
+.tag-container{
+    padding-bottom: 20px;
+}
+
 .tag{
     font-size: 0.875rem;
     font-weight: 400;
