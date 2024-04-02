@@ -31,7 +31,6 @@
     width: 32px;
     transform: rotate(180deg);
     margin-right: 10px;
-    /* filter: var(--secondary-color); */
     transition: transform 0.3s ease-in;
 }
 
