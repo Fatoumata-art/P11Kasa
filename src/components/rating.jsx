@@ -2,7 +2,7 @@ import  './../assets/styles/rating.css';
 import  StarIcon  from './../assets/star.svg';
 
 
- function Ratings({ rating }) {
+ function Ratings({rating}) {
   
   // transformer le rating en nombre parce que c'est un string dans le fichier JSON
   const numberOfStars = parseInt(rating);

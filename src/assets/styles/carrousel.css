@@ -1,15 +1,35 @@
-.appart-container{
-   
-    width: 1420px;
-    padding: 50px;
-    
+
+.carousel{
+    position: relative;
 }
 
 .carousel-img{
-    width: 100%;
-    height: 450px;
+    display: flex;
     border-radius: 15px;
+    height: 500px;
+    width: 100%;
 }
+
+.img-hidden{
+    display: none;
+}
+.arrow{
+    position: absolute;
+    color: whitesmoke;
+    bottom: 50%;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+.left{
+    left: 0.5rem;
+}
+
+.right{
+    right: 0.5rem;
+}
+
 
 .appart-title{
     font-family: "Montserrat", sans-serif;
@@ -18,3 +38,14 @@
     color: rgba(255, 96, 96, 1)
     ;
 }
+
+.numeros{
+    display: flex;
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 50%;
+    text-shadow: 1px 1px 2px black;
+}   

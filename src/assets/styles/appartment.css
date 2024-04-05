@@ -1,5 +1,10 @@
+.section-appartment{
+    width: 1420px;
+    padding: 50px;
+    
+}
 .section-appart-right{
-   padding: 0px 50px 0px 50px;
+   padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

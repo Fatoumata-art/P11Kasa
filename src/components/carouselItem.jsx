@@ -1,8 +1,8 @@
 
-function CarouselItem( {image}){
+function CarouselItem( {url}){
     return (
         <div className='carousel-item'>
-                    <img className="carousel-img" src={image} alt="" />
+                    <img  src={url} alt="" />
                         </div>
     )
 }

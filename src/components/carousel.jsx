@@ -1,41 +1,51 @@
 import "./../assets/styles/carrousel.css"
-//import arrowLeft from "./../assets/arrowLeft.svg"
-//import arrowRight from "./../assets/arrowLeft.svg"
-import React, { useState } from "react"
+import arrowLeft from "./../assets/arrowLeft.svg"
+import arrowRight from "./../assets/arrowRight.svg"
+import React, { useEffect, useState } from "react"
+//import CarouselItem from "./carouselItem";
 
-function Carousel(image, title){
+function Carousel({pictures}){
 
-    const [activeIndex, setActiveIndex ] = useState(0);
+     const [imageIndex, setImageIndex ] = useState(0);
 
     // s'il n'y a qu'une seule photo, cacher les boutons fléchés
-    const displayArrow = image.length > 1;
+    const displayArrow = pictures.length > 1;
 
      // si l'index actuel est inférieur à la longueur, afficher l'image suivante.
     // Sinon, afficher la première image
-    const next = () => {
-        if (activeIndex < image.length - 1) {
-            setActiveIndex((prevState) => prevState + 1);
+    const nextImage = () => {
+        if (imageIndex < pictures.length - 1) {
+            setImageIndex(imageIndex + 1);
         } else {
-            setActiveIndex(0);
+            setImageIndex(0);
         }
     };
 
      // si l'index actuel est supérieur à 0, index actuel - 1
     // sinon afficher la dernière image
-    const previous = () => {
-        if (activeIndex > 0) {
-            setActiveIndex((prevState) => prevState - 1);
+    const previousImage = () => {
+        if (imageIndex > 0) {
+            setImageIndex(imageIndex - 1);
         } else {
-            setActiveIndex(image.length - 1);
+            setImageIndex(pictures.length - 1);
         }
     };
-  
+
+
     return (
         <div className='carousel'>
-           <div className='carousel-item'>
-            <img className="carousel-img" src={image[activeIndex]} alt={title} />
-                
-            </div>
+             <img src={arrowLeft} className="arrow left" alt='Image précédente' onClick={previousImage}></img>
+                  
+           { 
+            pictures.map((url, index) => (
+                <div className='carousel-item'>
+                    <img  src={url} alt="" className={imageIndex === index ? "carousel-img" : "carousel-img img-hidden"} />
+                </div>
+                    
+            ))
+           }
+            <img src={arrowRight} className="arrow right" alt='Image suivante' onClick={nextImage}></img>
+            <span className="numeros">{`${imageIndex + 1}/${pictures.length}`}</span>
         </div>
     )
 }
