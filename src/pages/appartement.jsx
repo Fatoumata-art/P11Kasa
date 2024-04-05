@@ -3,21 +3,17 @@ import { useParams, Navigate } from 'react-router-dom';
 import Carousel from '../components/carousel' 
 import  Collapse  from "../components/collapse";
 import "../assets/styles/appartment.css";
-import Ratings from '../components/rating';
+import StartRate from '../components/rating';
 
 
 function Appartement(){
     const {id}  = useParams();
-    const apparts = data.filter((apartment) => apartment.id === id)
+    const apparts = data.filter((apartment) => apartment.id === id);
+    const appart = apparts[0];
 
     if (!apparts.length)
         return <Navigate to="/notFound"/> 
-
-    
-    const appart = apparts[0];
-
-
-
+ 
     return (
         <main className='section-appartment'>
             <Carousel pictures={appart.pictures} />
@@ -33,8 +29,8 @@ function Appartement(){
                             </div>
                             <img src={appart.host.picture} alt=""></img>
                         </div>
+                       <StartRate rating={appart.rating}/>
                        
-                        {/* <Ratings rating={appart.note} /> */}
                     </div>
                 </section>
                 <div className='appart_collapse'>
