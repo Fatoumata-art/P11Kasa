@@ -1,0 +1,94 @@
+.about_section{
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.dropdown_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 52px; */
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    padding-left: 20px;
+    border-radius: 10px;
+   
+}
+
+.dropdown_header:hover{
+    cursor: pointer;
+}
+
+.dropdown_header h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dropdown_header img{
+    height: 32px;
+    width: 32px;
+    transform: rotate(180deg);
+    margin-right: 10px;
+    transition: transform 0.3s ease-in;
+}
+
+.dropdown_content {
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.dropdown_content p, .dropdown_content ul{
+    padding: 20px;
+    font-size: 1.125rem;
+    list-style: none;
+    color: red
+    
+}
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Tablettes ====== */
+@media screen and (max-width: 1023.5px){
+    
+    .dropdown_header{
+        height: 37px;
+    }
+
+    .dropdown_header h2{
+        font-size: 1.125rem;
+    }
+
+    .dropdown_header img{
+        height: 24px;
+        width: 24px;
+    }
+
+    .dropdown_content p{
+        font-size: 1.125rem;
+    }
+}
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 767.5px){
+
+    .dropdown_header{
+        height: 30px;
+    }
+
+    .dropdown_header h2{
+        font-size: 0.813rem;
+    }
+
+    .dropdown_header img{
+        height: 18.42px;
+        width: 18.42px;
+    }
+
+    .dropdown_content p{
+        font-size: 0.75rem;
+    }
+}

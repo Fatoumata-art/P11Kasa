@@ -1,0 +1,46 @@
+/* ========  HometPage  ==========*/
+
+
+
+/* ========  AboutPage  ==========*/
+
+.about_section{
+  display: flex;
+  flex-direction: column;
+  gap: 2.063rem;
+  margin: 0rem 6.25rem 2.5rem 6.25rem;
+  padding:5rem 6.75rem 0rem 6.75rem;
+}
+
+.about_section_article_header{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0.313rem;
+  padding: 0.55rem 1.125rem 0.55rem 1.125rem;
+}
+
+.about_section_article_header h1{
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.svg{
+  height: 1.5rem;
+  align-self: center;
+  rotate: 90deg;
+  margin-right: 1.563rem;
+}
+
+.about_section p{
+  margin: 0;
+  padding: 1.688rem 1.125rem 1.125rem 1.125rem;
+  font-size: 1.5rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: rgba(255, 96, 96, 1);
+  border-radius: 0 0 0.313rem 0.313rem;
+}

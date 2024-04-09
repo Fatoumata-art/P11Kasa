@@ -1,0 +1,89 @@
+.section-appartment{
+    width: 93%;
+    padding: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+.section-appart-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.appart-desc-title{
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: rgba(255, 96, 96, 1);
+   
+}
+
+.appart-desc-text{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.section-appart-leftt{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-container{
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tag{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: white;
+    padding: 0.25rem 2.5rem ;
+    background-color: rgba(255, 96, 96, 1);
+    border-radius: 10px;
+}
+
+.user-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.user-name p{
+    padding-top: 5px;
+}
+
+.user-name p{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgba(255, 96, 96, 1)
+    ;
+    text-align: right;
+}
+
+.appart-desc-left img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(195, 194, 194);
+}
+
+.rating{
+    display: flex;
+    gap: 10px;
+  }
+.appart_collapse{
+    display: flex;
+    gap: 2rem;
+    padding-top: 20px;
+}
+
+.appart_collapse .dropdown{
+ 
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+}
