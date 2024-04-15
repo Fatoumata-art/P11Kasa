@@ -4,7 +4,6 @@ body{
 }
 
 .error-page{
-  padding: 55px;
   display: flex;
   flex-direction: column;
   justify-content: center;

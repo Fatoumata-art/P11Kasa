@@ -22,10 +22,10 @@
     margin-top: 10px;
 }
 
-.section-appart-leftt{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
+.section-appart-left{
+    margin-top: 20px ;
+    /* display: flex;
+    flex-direction: row; */
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -40,7 +40,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: white;
-    padding: 0.25rem 2.5rem ;
+    padding: 0.25rem 2rem ;
     background-color: rgba(255, 96, 96, 1);
     border-radius: 10px;
 }
@@ -79,11 +79,47 @@
 .appart_collapse{
     display: flex;
     gap: 2rem;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .appart_collapse .dropdown{
  
     width: 50%;
     font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-appartment{
+        padding: 30px;
+    }
+    .appart_collapse{
+        padding: 0;
+    }
+}
+      
+    
+@media only screen and (max-width: 660px) {
+    .section-appartment{
+      
+      padding: 10px;
+    }
+
+    .carousel-img{
+        height: 300px;
+    }
+
+    .section-appart-right{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+.appart_collapse{
+    padding-left: 0;
+}
+    .appart_collapse .dropdown{
+        width: 100%;
+    }
+    .rating{
+        margin-top: -59px;
+    }
 }

@@ -54,9 +54,6 @@
 /* ====== Tablettes ====== */
 @media screen and (max-width: 1023.5px){
     
-    .dropdown_header{
-        height: 37px;
-    }
 
     .dropdown_header h2{
         font-size: 1.125rem;
@@ -75,9 +72,7 @@
 /* ====== Mobiles ====== */
 @media screen and (max-width: 767.5px){
 
-    .dropdown_header{
-        height: 30px;
-    }
+   
 
     .dropdown_header h2{
         font-size: 0.813rem;
@@ -90,5 +85,17 @@
 
     .dropdown_content p{
         font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+   
+        
+    .appart_collapse{
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropdown{
+        width: 100%;
     }
 }

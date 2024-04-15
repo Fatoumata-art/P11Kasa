@@ -1,12 +1,11 @@
 .banner{
-    width: 100%;
-    padding: 50px;
-    height: 222px;
+    width: 90%;
+    padding: 30px;
+  
 }
 
 .banner img{
-   
-    width: 95%;
+    width: 100%;
 }
 
 .banner-title{
@@ -18,5 +17,23 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
+   margin: 0;
    
 }
+
+@media only screen and (max-width: 600px) {
+    
+      .banner-title{
+        font-size: 1.3rem;
+        
+      }
+      .banner{
+        width: 95%;
+        padding: 10px;
+
+      }
+      .banner img{
+         height: 100px;
+      }
+   
+  }
