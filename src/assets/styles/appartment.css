@@ -128,4 +128,7 @@
     .user-name p{
         font-size: 1rem;
     }
+    .rating img{
+        width: 15px;
+    }
 }

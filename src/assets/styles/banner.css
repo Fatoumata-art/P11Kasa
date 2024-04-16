@@ -1,7 +1,9 @@
 .banner{
     width: 90%;
     padding: 30px;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner img{
@@ -14,17 +16,13 @@
     font-weight: 500;
     font-size: 3rem;
    position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   margin: 0;
-   
+
 }
 
 @media only screen and (max-width: 600px) {
     
       .banner-title{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         
       }
       .banner{
