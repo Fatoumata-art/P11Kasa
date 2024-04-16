@@ -31,10 +31,12 @@ function Carousel({pictures}){
         }
     };
 
+    if(pictures.length == 0){
 
+    }
     return (
         <div className='carousel'>
-             <img src={arrowLeft} className="arrow left" alt='Image précédente' onClick={previousImage}></img>
+             <img src={arrowLeft} className={pictures.length == 1 ? "arrow left img-hidden" : "arrow left"} alt='Image précédente' onClick={previousImage}></img>
                   
            { 
             pictures.map((url, index) => (
@@ -44,7 +46,7 @@ function Carousel({pictures}){
                     
             ))
            }
-            <img src={arrowRight} className="arrow right" alt='Image suivante' onClick={nextImage}></img>
+            <img src={arrowRight} className={pictures.length == 1 ? "arrow right img-hidden" : "arrow right"} alt='Image suivante' onClick={nextImage}></img>
             <span className="numeros">{`${imageIndex + 1}/${pictures.length}`}</span>
         </div>
     )

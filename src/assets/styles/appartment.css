@@ -100,7 +100,6 @@
     
 @media only screen and (max-width: 660px) {
     .section-appartment{
-      
       padding: 10px;
     }
 
@@ -113,13 +112,20 @@
         padding-bottom: 20px;
     }
 
-.appart_collapse{
-    padding-left: 0;
-}
+   
+    .appart_collapse{
+        padding-left: 0;
+    }
     .appart_collapse .dropdown{
         width: 100%;
     }
     .rating{
         margin-top: -59px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .user-name p{
+        font-size: 1rem;
     }
 }
