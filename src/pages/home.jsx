@@ -1,9 +1,10 @@
 import Banner from '../components/banner'
-import photoBanner from '../assets/images/photoBanner.png'
+import photoBanner from '../assets/images/homeBanner.svg'
 import Card from "../components/cards"
 
 function Home(){
-    const title = 'Chez vous, partout et ailleurs'
+    // const title = 'Chez vous, partout et ailleurs'
+    const title = "";
     return (
         <>
             <Banner photoBanner={photoBanner} title={title} />

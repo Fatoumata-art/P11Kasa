@@ -114,7 +114,7 @@
 
    
     .appart_collapse{
-        padding-left: 0;
+        padding: 15px 0px;
     }
     .appart_collapse .dropdown{
         width: 100%;

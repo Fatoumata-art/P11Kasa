@@ -1,4 +1,24 @@
-/* ========  HometPage  ==========*/
+/* ========  ErrorPage  ==========*/
+
+.error-page{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 96, 96, 1);
+  
+}
+
+.error-page img{
+  width: 40%;
+}
+.error-page a{
+  text-decoration: underline;
+}
 
 
 
@@ -43,4 +63,22 @@
   font-weight: 400;
   color: rgba(255, 96, 96, 1);
   border-radius: 0 0 0.313rem 0.313rem;
+}
+
+/* ========  Responsiv design  ==========*/
+
+@media only screen and (max-width: 660px) {
+  .about_section{
+    margin: 20px;
+    padding: 0;
+  }
+
+  .error-page{
+   
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .error-page a{
+    font-size: 0.8rem;
+  }
 }
