@@ -40,7 +40,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: white;
-    padding: 0.25rem 2rem ;
+    padding: 0.25rem 1.5rem ;
     background-color: rgba(255, 96, 96, 1);
     border-radius: 10px;
 }
@@ -122,6 +122,13 @@
     .rating{
         margin-top: -59px;
     }
+    .tag{
+        font-size: 0.6rem;
+    }
+
+    .appart-desc-title{
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 380px) {
@@ -131,4 +138,5 @@
     .rating img{
         width: 15px;
     }
+   
 }

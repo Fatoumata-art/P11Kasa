@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./../assets/styles/banner.css"
 
 function Banner({title, photoBanner}) {

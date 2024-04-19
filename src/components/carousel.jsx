@@ -1,7 +1,7 @@
 import "./../assets/styles/carrousel.css"
 import arrowLeft from "./../assets/arrowLeft.svg"
 import arrowRight from "./../assets/arrowRight.svg"
-import React, { useState } from "react"
+import  { useState } from "react"
 //import CarouselItem from "./carouselItem";
 
 function Carousel({pictures}){

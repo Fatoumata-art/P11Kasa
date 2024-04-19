@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import data from '../data/data.json'
 import {Link} from 'react-router-dom';
 import "../assets/styles/card.css"
